@@ -231,8 +231,7 @@ To publish this project to GitHub:
    ```bash
    git init
    git add .
-   git commit -m "Initial voice-to-text Tauri + Deepgram prototype" \
-     -m "Co-Authored-By: Warp <agent@warp.dev>"
+   git commit -m "Initial voice-to-text Tauri + Deepgram prototype" 
    ```
 
 2. Create an empty GitHub repository (via the GitHub UI) and copy its HTTPS URL.
