@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="/src/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Voice to Text – Wispr Clone</title>
+    <script type="module" src="/src/main.ts" defer></script>
+  </head>
+
+  <body>
+    <main class="app">
+      <header class="app-header">
+        <div class="app-header-main">
+          <div class="app-title-group">
+            <div class="app-logo-wrapper">
+              <img
+                src="/src/assets/logo.png"
+                alt="Voice to Text logo"
+                class="app-logo"
+              />
+            </div>
+            <div class="app-title-text">
+              <h1>Voice to Text Desktop App</h1>
+              <p class="subtitle">
+                Push-to-talk prototype using Tauri + Deepgram (Wispr Flow style)
+              </p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <section class="transcript-section">
+        <div class="section-header">
+          <h2>Transcript</h2>
+          <div class="section-actions">
+            <button id="copy-button" type="button">Copy</button>
+            <button id="clear-button" type="button">Clear</button>
+          </div>
+        </div>
+        <div id="transcript" class="transcript" aria-label="Live transcript"></div>
+      </section>
+
+      <section class="controls-section">
+        <button id="ptt-button" class="ptt-button" type="button">
+          Hold to Talk
+        </button>
+        <div class="status-row">
+          <span class="status-label">Status:</span>
+          <span id="status-text" class="status-text">Idle</span>
+        </div>
+      </section>
+
+      <section class="debug-section">
+        <h3>Debug / Errors</h3>
+        <pre id="error-text" class="error-text" aria-live="polite"></pre>
+      </section>
+    </main>
+  </body>
+</html>
