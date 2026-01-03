@@ -222,26 +222,7 @@ These tests demonstrate that the push‑to‑talk workflow, Deepgram integration
 
 ---
 
-## GitHub Repository Guidance
 
-To publish this project to GitHub:
 
-1. Initialize a local repository (from the project root):
 
-   ```bash
-   git init
-   git add .
-   git commit -m "Initial voice-to-text Tauri + Deepgram prototype" 
-   ```
 
-2. Create an empty GitHub repository (via the GitHub UI) and copy its HTTPS URL.
-
-3. Add the remote and push:
-
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-Your repository will then contain the full codebase, this README, and the documented architecture and limitations.
